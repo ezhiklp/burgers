@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БУРГЕРЫ от Вадима</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        header {
+            background-color: #c00;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 0;
+            background-image: url('https://images.unsplash.com/photo-1586190848861-99aa4a171e90');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .menu-item {
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-item-content {
+            padding: 20px;
+        }
+
+        .price {
+            color: #c00;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #c00;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .contacts {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+
+        @media (max-width: 768px) {
+            .contacts {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>БУРГЕРЫ от Вадима</h1>
+    </header>
+
+    <nav>
+        <a href="#menu">Меню</a>
+        <a href="#about">О нас</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+            <h2>Лучшие бургеры в городе!</h2>
+            <p>Сочная котлета, хрустящий бекон и свежие овощи</p>
+        </div>
+    </div>
+
+    <div class="container" id="menu">
+        <h2>Наше меню</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Классический бургер">
+                <div class="menu-item-content">
+                    <h3>Классический</h3>
+                    <p>Говяжья котлета, сыр чеддер, салат, помидор, лук, соус</p>
+                    <div class="price">350 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b" alt="Чизбургер">
+                <div class="menu-item-content">
+                    <h3>Двойной чизбургер</h3>
+                    <p>Две говяжьи котлеты, двойной сыр, бекон, соус</p>
+                    <div class="price">450 ₽</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1596662951482-0c4ba74a6df6" alt="Вегетарианский">
+                <div class="menu-item-content">
+                    <h3>Вегетарианский</h3>
+                    <p>Двойная говяжья котлета, куриное филе, кровь ягнёнка, кожа барана, сало, соус кетчунез</p>
+                    <div class="price">400 ₽</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="about">
+        <h2>О нас</h2>
+        <p>Мы готовим бургеры с 2015 года, используя только свежие продукты и секретные рецепты. Все соусы и булочки мы делаем самостоятельно ежедневно!</p>
+    </div>
+
+    <div class="container" id="contacts">
+        <h2>Контакты</h2>
+        <div class="contacts">
+            <div>
+                <h3>Адрес</h3>
+                <p>Burger street 15</p>
+            </div>
+            <div>
+                <h3>Телефон</h3>
+                <p>+7 999 123-45-67</p>
+            </div>
+            <div>
+                <h3>Часы работы</h3>
+                <p>Ежедневно 10:00 - 22:00</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 БУРГЕРЫ от Вадима. Все права защищены.</p>
+    </footer>
+</body>
+</html>
